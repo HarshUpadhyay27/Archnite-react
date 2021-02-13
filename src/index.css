@@ -1,0 +1,592 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn-follow{
+    padding: 1rem 1rem;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    background-color:  rgb(121, 188, 230);
+    color: white;
+    cursor: pointer;
+    border-radius: .3rem;
+    box-shadow: 3px 3px grey;
+    border: none;
+    width: 12.2rem;
+}
+
+.btn-follow:focus{
+    border: none;
+}
+.btn-follow:hover{
+    box-shadow: 3px 3px white;
+}
+  
+.nav{
+    border: 1px 1px 1px 1px solid white;
+    height: 4rem;
+    display: flex;
+}
+
+.nav a{
+    color: black;
+}
+  
+.nav .logo{
+    font-size: 2.5rem;
+    text-decoration: none;
+    padding-top: .4rem;
+    padding-left: 1rem;
+    width: 50%;
+}
+
+.nav-div{
+    width: 50%;
+    text-align: right;
+}
+
+.nav .list-items{
+    font-size: 1.3rem;
+    display: flex;
+}
+
+.nav .list-items .list-item{
+    padding: 1.3rem;
+}
+
+.nav .list-items .list-item:hover{
+    background-color: rgb(219, 209, 209);
+}
+
+.nav .list-items button{
+    margin-right: .4rem;
+    font-size: 1.4rem;
+    margin-top: .9rem;
+    padding: .3rem .4rem;
+    background-color: rgb(221, 69, 69);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: .3rem;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.nav .list-items button:hover{
+    box-shadow: 3px 3px 3px white;
+}
+
+.nav .list-items button:focus{
+    outline: none;
+}
+
+.burger{
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: none;
+}
+
+.modal{
+    display: none;
+    width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px grey;
+    border: none;
+    padding: 3rem 2rem;
+}
+
+.modal .modal-content input{
+    border: none;
+    border-bottom: 2px solid rgb(155, 152, 152);
+    font-size: 1rem;
+    opacity: .7;
+    padding-bottom: .6rem;
+    width: 695px;
+}
+
+.modal .modal-content .collection{
+    padding-top: 2rem;
+}
+
+.modal .modal-content .collection li{
+    padding: .5rem 0;
+    cursor: pointer;
+}
+
+.modal .modal-footer button{
+    position: absolute;
+    right: 2.5rem;
+    top: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: .7;
+}
+
+/*----------------Home-----------------*/
+.home-card{
+    box-shadow: 0px 0px 5px grey;
+    max-width: 650px;
+    height: max-content;
+    margin: 3rem auto;
+}
+
+.home-card h5{
+    padding-top: .2rem;
+    padding-left: .5rem;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}    
+
+.home-card h5 i{
+    color: red;
+    float: right;
+    font-size: 2rem;
+    padding-top: .4rem;
+    padding-right: .4rem;
+}
+
+.home-card h5 i:hover{
+    color: rgb(216, 90, 90);
+}
+
+.home-card .card-img img{
+    max-width: 650px;
+    height: 70vh;
+    margin-top: .4rem;
+}
+
+.home-card .card-content{
+    margin-left: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.home-card .card-content i{
+    padding-top: .7rem;
+    color: red;
+    font-size: 2rem;
+}
+
+.home-card .card-content h6{
+    padding-top: .7rem;
+    font-size: 1.3rem;
+}
+
+.home-card .card-content p{
+    padding-top: .4rem;
+    font-size: 1.3rem;
+}
+
+.home-card .card-content input{
+    border: none;
+    width: 590px;
+    border-bottom: 1px solid grey;
+    margin-top: 1rem;
+    padding-bottom: .9rem;
+    font-size: 1rem;
+    opacity: .5;
+}
+
+.home-card .card-content input:focus{
+    outline: none;
+}
+
+.home-card .card-content input:hover{
+    border-bottom: 2px solid rgb(121, 188, 230);
+}
+
+.material-icons{
+    cursor: pointer;
+}
+
+/*----------------Home-----------------*/
+/*----------------Login-----------------*/
+
+.signin .card{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    padding-top: 2rem;
+    margin-top: 2.5rem;
+    box-shadow: 0 0 5px grey;
+}
+
+.signin .card h2{
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+.signin .card input{
+    margin-top: 2rem;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+    opacity: .5;
+}
+
+.signin .card input:focus{
+    outline: none;
+}
+
+.signin .card input:hover{
+    border-bottom: 2px solid rgb(121, 188, 230);
+}
+
+.signin .card button{
+    width: 6rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: .6rem .8rem;
+    cursor: pointer;
+    background-color: rgb(121, 188, 230);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px grey;
+}
+
+.signin .card button:hover{
+    box-shadow: 2px 2px white;
+}
+
+.signin .card button:focus{
+    outline: none;
+}
+
+.signin .card h5{
+    padding-bottom: 2rem;
+}
+
+.signin .card .account:hover{
+    color: gray;
+}
+
+.signin .card .account:focus{
+    outline: none;
+}
+
+.signin .card .account{
+    font-size: 2rem;
+    color: black;
+}
+
+/*----------------Login-----------------*/
+/*----------------Signup-----------------*/
+
+.signup .card{
+    max-Width:750px;
+    margin:0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    padding-top: 2rem;
+    margin-top: 2.5rem;
+    box-shadow: 0 0 5px grey;
+}
+
+.signup .card h2{
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+.signup .card input{
+    margin-top: 2rem;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+    opacity: .7;
+}
+
+.signup .card input:focus{
+    outline: none;
+}
+
+.signup .card input:hover{
+    border-bottom: 2px solid rgb(121, 188, 230);
+}
+
+.signup .card button{
+    width: 8rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding: .6rem .8rem;
+    cursor: pointer;
+    background-color: rgb(121, 188, 230);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px grey;
+}
+
+.signup .card button:hover{
+    box-shadow: 2px 2px white;
+}
+
+.signup .card button:focus{
+    outline: none;
+}
+
+.signup .card h5{
+    padding-bottom: 2rem;
+}
+
+.signup .card .account:hover{
+    color: gray;
+}
+
+.signup .card .account:focus{
+    outline: none;
+}
+
+.signup .card .account{
+    font-size: 2rem;
+    color: black;
+}
+
+/*----------------Signup-----------------*/
+/*----------------profile-----------------*/
+
+.pro{
+    padding-bottom: 1rem;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.profile .card-left img{
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+}
+
+.profile .card-right h4{
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+.profile .card-right h5{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.profile .card-right .card-item{
+    display: flex;
+    margin: 24px 0;
+    font-size: 1.8rem;
+    justify-content: space-between;
+}
+
+.profile .card-right .card-item h5{
+    padding-right: 1rem;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery .item{
+    width: 32%;
+    height: 32vh;
+    padding-top: 1rem;
+}
+/*----------------profile-----------------*/
+/*----------------create-----------------*/
+
+.create{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    padding-top: 3rem;
+    margin-top: 2.5rem;
+    box-shadow: 0 0 5px grey;
+}
+
+.create input{
+    border: none;
+    border-bottom: 1px solid gray;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    opacity: .7;
+}
+
+input:focus{
+    outline: none;
+}
+
+input:hover{
+    border-bottom: 3px solid rgb(121, 188, 230);
+}
+
+.file-field{
+    display: flex;
+}
+
+.file-field .btn{
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    background-color:  rgb(121, 188, 230);
+    color: white;
+    cursor: pointer;
+    border-radius: .3rem;
+    box-shadow: 3px 3px grey;
+}
+
+.file-field .btn:hover{
+    box-shadow: 2px 2px white;
+}
+
+.btn .hidden{
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    width: .1px;
+    height: .1px;
+    opacity: 0;
+}
+
+.file-path-wrapper{
+    margin-left: .8rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid gray !important;
+    opacity: .7;
+}
+
+.file-path-wrapper input{
+    border: none;
+}
+
+.btn-submit{
+    padding: 1rem 1rem;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    background-color:  rgb(121, 188, 230);
+    color: white;
+    cursor: pointer;
+    border-radius: .3rem;
+    box-shadow: 3px 3px grey;
+    border: none;
+    width: 12.2rem;
+}
+
+.btn-submit:hover{
+    box-shadow: 3px 3px white;
+}
+
+.btn-submit:focus{
+    outline: none;
+}
+
+/*----------------create-----------------*/
+
+@media only screen and (max-width: 750px){
+    .nav{
+        flex-direction: column;
+        height: 23rem;
+    }
+    .nav .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .nav-div{
+        width: 100%;
+    }
+    .nav .list-items{
+        flex-direction: column;
+    }
+    .nav .list-items .list-item{
+        text-align: center;
+    }
+    .nav .list-items .log-out{
+        margin: 0 45%;
+    }
+    .burger{
+        display: block;
+    }
+    #h-res{
+        height: 4rem;
+    }
+    #v-res{
+        display: none;
+    }
+    .home-card{
+        width: 90vw;
+    }
+    .home-card .card-img img{
+        width: 90vw;
+    }
+    .home-card .card-content input{
+        width: 72vw;
+    }
+    .modal{
+        width: 90vw;
+    }
+    .modal .modal-content input{
+        width: 88vw;
+    }
+}
+@media only screen and (max-width: 650px){
+    .profile{
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile .card-right .card-item{
+        justify-content: end;
+        justify-content: center;
+        padding-left: 1rem;
+    }
+}
+@media only screen and (max-width: 550px){
+    .file-field{
+        flex-direction: column-reverse;
+    }
+    .file-field .btn{
+        text-align: center;
+    }
+    .gallery .item{
+        height: 32vw;
+    }
+}
+@media only screen and (max-width: 400px){
+    .signup .card h2{
+        font-size: 3rem;
+    }
+    .signin .card h2{
+        font-size: 3rem;
+    }
+    .nav .logo{
+        padding-top: .8rem;
+        font-size: 2rem;
+    }
+    .burger{
+        right: .5rem;
+    }
+}
