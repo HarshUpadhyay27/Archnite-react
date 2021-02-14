@@ -3,11 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "proxy": {
-    "/api": {
-      "target": "https://insta-clone-rest-api.herokuapp.com",
-      "pathRewrite": {
-        "^/api": "/"
-      }
+    "/": {
+      "target": "https://insta-clone-rest-api.herokuapp.com"
     }
   },
   "dependencies": {
