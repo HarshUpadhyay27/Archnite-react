@@ -1,5 +1,8 @@
 {
     "root": "build/",
+    "routes": {
+        "/**": "index.html"
+      },
     "proxies": {
       "/": {
         "origin": "https://insta-clone-rest-api.herokuapp.com"
