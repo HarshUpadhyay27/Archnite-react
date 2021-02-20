@@ -7,7 +7,7 @@ const SubUserPosts = () => {
     const [data, setData] = useState([])
     const { state, dispatch } = useContext(UserContext)
     useEffect(() => {
-        fetch('/getsubpost', {
+        fetch('/api/getsubpost', {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")
             }
@@ -19,7 +19,7 @@ const SubUserPosts = () => {
     }, [])
 
     const likePost = (id) => {
-        fetch('/like', {
+        fetch('/api/like', {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -45,7 +45,7 @@ const SubUserPosts = () => {
     }
 
     const unlikePost = (id) => {
-        fetch('/unlike', {
+        fetch('/api/unlike', {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -70,7 +70,7 @@ const SubUserPosts = () => {
     }
 
     const makeCooment = (text, postId) => {
-        fetch('/comment', {
+        fetch('/api/comment', {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
