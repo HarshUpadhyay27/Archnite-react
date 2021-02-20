@@ -38,7 +38,7 @@ const Signup = () =>{
             window.alert("invalid email")
             return
         }
-        fetch("/api/signup",{
+        fetch("/signup",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"

@@ -7,7 +7,7 @@ const CreatePost = () => {
     const [url, setUrl] = useState("")
     useEffect(() => {
         if(url){
-        fetch("/api/createpost", {
+        fetch("/createpost", {
             method: "post",
             headers: {
                 "Content-Type": "application/json",
