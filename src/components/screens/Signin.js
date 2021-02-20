@@ -12,7 +12,7 @@ const Login = () =>{
             window.alert("invalid email")
             return
         }
-        fetch("/signin",{
+        fetch("/api/signin",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"
