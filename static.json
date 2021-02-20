@@ -5,7 +5,7 @@
     },
     "proxies": {
       "/api/": {
-        "origin": "https://insta-clone-rest-api.herokuapp.com"
+        "origin": "${API_URL}"
       }
     }
   }
